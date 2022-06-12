@@ -1,5 +1,14 @@
 import React from 'react';
+import HeaderHome from '../components/Home/HeaderHome';
+import WorksPresentation from '../components/Home/WorksPresentation';
 
-export default function Home() {
-  return <div>Home</div>;
-}
+const Home = () => {
+  return (
+    <>
+      <HeaderHome />
+      <WorksPresentation />
+    </>
+  );
+};
+
+export default Home;

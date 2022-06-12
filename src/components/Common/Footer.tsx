@@ -2,12 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Footer = () => {
-  return <FooterContent />;
+  return <FooterContainer />;
 };
 
-const FooterContent = styled.div`
+const FooterContainer = styled.div`
   background: ${props => props.theme.colors.matterhorn};
-  width: 100%;
+  width: 1200px;
   height: 64px;
 `;
 
