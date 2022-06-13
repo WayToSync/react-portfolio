@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import header from '../../assets/home/header.png';
-import profile from '../../assets/home/profile.png';
+import header from '../../../assets/home/header.png';
+import profile from '../../../assets/home/profile.png';
 
 const HeaderHome = () => {
   return (

@@ -26,6 +26,7 @@ declare module 'styled-components' {
       white: string;
       whiteSmoke: string;
       matterhorn: string;
+      black: string;
     };
   }
 }

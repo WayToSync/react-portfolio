@@ -4,6 +4,7 @@ const GlobalStyles = createGlobalStyle`
   * {
   box-sizing: border-box;
   
+  /* TODO: Think to change the color to grey */
   }
   body {
     background: ${({ theme }) => theme.colors.white};

@@ -24,6 +24,7 @@ const defaultTheme: DefaultTheme = {
     white: '#ffffff',
     whiteSmoke: '#f7f7f7',
     matterhorn: '#515151',
+    black: '#000000',
   },
 };
 
