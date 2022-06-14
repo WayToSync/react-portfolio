@@ -43,6 +43,7 @@ const HeaderWrapper = styled.div`
   top: 0px;
   mix-blend-mode: multiply;
   background-image: url(${header});
+  color: ${props => props.theme.colors.white};
 `;
 
 const Overview = styled.div`
@@ -99,7 +100,7 @@ const Line = styled.div`
 
 const KatakanaName = styled.div`
   position: absolute;
-  font-size: ${props => props.theme.fonts.sizes.small};
+  font-size: ${props => props.theme.fonts.sizes.medium};
   line-height: ${props => props.theme.lineHeight.medium};
   font-weight: ${props => props.theme.fonts.weight.medium};
   width: 611px;

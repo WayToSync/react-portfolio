@@ -3,12 +3,11 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyles = createGlobalStyle`
   * {
   box-sizing: border-box;
-  
-  /* TODO: Think to change the color to grey */
   }
+  
   body {
     background: ${({ theme }) => theme.colors.white};
-    color: ${props => props.theme.colors.white};
+    color: ${props => props.theme.colors.matterhorn};
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-size: 14px;
