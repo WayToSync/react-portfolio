@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+# How to use this project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) TS template.
+Run the nodeJS server you can find [here](https://github.com/WayToSync/json-server)
+
+Use `npm run lint-fix` to use the linter
+
+Launch the project with `npm run start`
 
 ## Available Scripts
 
