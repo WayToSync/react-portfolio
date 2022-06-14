@@ -13,7 +13,7 @@ const OtherWorksContent = () => {
           <WorksCard imageUrl={worksOtherLeft} worksTitle='Musubu' worksSubTitle='Coding / React + Redux' />
         </LeftCard>
       </a>
-      <a target='_blank' rel='noreferrer' href='https://github.com/WayToSync/react-portfolio/'>
+      <a target='_blank' rel='noreferrer' href='https://github.com/WayToSync/json-server'>
         <RightCard>
           <WorksCard imageUrl={worksOtherRight} worksTitle='Musubu' worksSubTitle='Coding / React + Redux' />
         </RightCard>
