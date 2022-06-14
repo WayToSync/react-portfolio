@@ -57,7 +57,7 @@ const Picture = styled.div`
   margin: 30px auto;
   width: 128px;
   height: 128px;
-  border-radius: ${props => props.theme.borderRadius};
+  border-radius: 64px;
   background-image: url(${profile});
 `;
 

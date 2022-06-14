@@ -1,6 +1,5 @@
 import { DefaultTheme } from 'styled-components';
 const defaultTheme: DefaultTheme = {
-  borderRadius: '64px',
   lineHeight: {
     small: '16px',
     medium: '19px',

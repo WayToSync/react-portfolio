@@ -11,6 +11,4 @@ const WorksHistory = () => {
   );
 };
 
-//TODO: Put border radius in global style
-
 export default WorksHistory;

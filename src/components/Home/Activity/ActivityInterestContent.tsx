@@ -15,13 +15,8 @@ const ActivityInterestContent = ({ image, interestTitle, interestContent }: Acti
       </ActivityInterestImage>
       <ActivityInterestContentUp>{interestTitle}</ActivityInterestContentUp>
       <ActivityInterestContentDown>
-        {interestContent.map(content => {
-          return (
-            <>
-              {content}
-              <br />
-            </>
-          );
+        {interestContent.map((content, index) => {
+          return <div key={index}>{content}</div>;
         })}
       </ActivityInterestContentDown>
     </>
