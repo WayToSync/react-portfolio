@@ -1,13 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
-import WorksHistoryTitle from './WorksHistoryTitle';
+import CategoryTitle from '../../Common/CategoryTitle';
+import historyIcon from '../../../assets/home/history.svg';
 import WorksHistoryLine from './WorksHistoryLine';
 
 const WorksHistoryUp = () => {
   return (
     <>
       <HistoryTitleExp>
-        <WorksHistoryTitle historyTitle='EXPERIENCE' />
+        <CategoryTitle icon={historyIcon} categoryTitle='EXPERIENCE' />
       </HistoryTitleExp>
       <HistoryLineLeft1>
         <WorksHistoryLine />
@@ -53,7 +54,7 @@ const WorksHistoryUp = () => {
         <HistoryNormalContent> 公園遊具メーカー。デザイナーとして従事。</HistoryNormalContent>
       </HistoryWrapperExp>
       <HistoryTitleEduc>
-        <WorksHistoryTitle historyTitle='EDUCATION' />
+        <CategoryTitle icon={historyIcon} categoryTitle='EDUCATION' />
       </HistoryTitleEduc>
       <HistoryLineRight>
         <WorksHistoryLine />

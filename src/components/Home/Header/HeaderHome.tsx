@@ -5,7 +5,7 @@ import profile from '../../../assets/home/profile.png';
 
 const HeaderHome = () => {
   return (
-    <HeaderWrapper>
+    <HeaderHomeWrapper>
       <Overview>
         <Picture />
         <FullName>Guillaume MORVAN</FullName>
@@ -32,15 +32,13 @@ const HeaderHome = () => {
         <br />
         大阪市
       </InfoRight>
-    </HeaderWrapper>
+    </HeaderHomeWrapper>
   );
 };
 
-const HeaderWrapper = styled.div`
+const HeaderHomeWrapper = styled.div`
   height: 430px;
   width: 1200px;
-  left: 0px;
-  top: 0px;
   mix-blend-mode: multiply;
   background-image: url(${header});
   color: ${props => props.theme.colors.white};

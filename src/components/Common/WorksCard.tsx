@@ -1,30 +1,25 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import chevronRight from '../../../assets/common/chevron-right.svg';
-import mouse from '../../../assets/common/mouse.svg';
+import chevronRight from '../../assets/common/chevron-right.svg';
 
 type WorksImageProps = {
   imageUrl: string;
+  worksTitle: string;
+  worksSubTitle: string;
 };
 
-const WorksCard = ({ imageUrl }: WorksImageProps) => {
+const WorksCard = ({ imageUrl, worksTitle, worksSubTitle }: WorksImageProps) => {
   return (
-    <WorksLink to='/works'>
+    <>
       <WorksWrapper>
         <img src={imageUrl} alt='Work 1' />
       </WorksWrapper>
-      <WorkTitle>Musubu LP</WorkTitle>
-      <WorkContent>Coding / Gatsby</WorkContent>
-      <ChevronButton />
-    </WorksLink>
+      <WorkTitle>{worksTitle}</WorkTitle>
+      <WorkContent>{worksSubTitle}</WorkContent>
+      <NextChevronButton />
+    </>
   );
 };
-
-const WorksLink = styled(Link)`
-  text-decoration: none;
-  cursor: url(${mouse}), auto;
-`;
 
 const WorksWrapper = styled.div`
   width: 100%;
@@ -46,7 +41,7 @@ const WorkContent = styled.div`
   color: ${props => props.theme.colors.black};
 `;
 
-const ChevronButton = styled.div`
+const NextChevronButton = styled.div`
   position: absolute;
   left: 47%;
   bottom: 7.11px;
