@@ -14,13 +14,9 @@ const WorksHistorySkillContent = () => {
               <HistorySkillLine key={index}>
                 <HistorySkillName>{skill.name}</HistorySkillName>
                 <HistorySkillLevel>
-<<<<<<< HEAD
-                  {skill.level.map(level => (level ? <DarkCyanCircle key={index} /> : <SilverCircle key={index} />))}
-=======
-                  {skill.level.map((level, index) => (
+                  {skill.level.map(level => (
                     <SkillsCircle key={index} level={level} />
                   ))}
->>>>>>> cc431c8ef078a393bdfbb7a89ba050a3018177f0
                 </HistorySkillLevel>
                 <HistorySkillContent>{skill.content}</HistorySkillContent>
               </HistorySkillLine>
