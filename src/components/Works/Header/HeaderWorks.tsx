@@ -1,18 +1,14 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import mouse from '../../../assets/common/mouse.svg';
 import chevronRight from '../../../assets/common/chevron-right.svg';
 
 const HeaderWorks = () => {
   return (
     <HeaderWorksWrapper>
       <ReturnLink to='/'>
-        <ReturnZone>
-          <ReturnChevronButton />
-        </ReturnZone>
+        <ReturnChevronButton />
+        <HeaderWorksContent>Guillaume MORVAN</HeaderWorksContent>
       </ReturnLink>
-      <HeaderWorksContent>Guillaume MORVAN</HeaderWorksContent>
     </HeaderWorksWrapper>
   );
 };
@@ -25,15 +21,6 @@ const HeaderWorksWrapper = styled.div`
 
 const ReturnLink = styled(Link)`
   text-decoration: none;
-  cursor: url(${mouse}), auto;
-`;
-
-const ReturnZone = styled.div`
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 65px;
-  height: 65px;
 `;
 
 const ReturnChevronButton = styled.div`
@@ -47,6 +34,7 @@ const ReturnChevronButton = styled.div`
 `;
 
 const HeaderWorksContent = styled.div`
+  color: ${props => props.theme.colors.matterhorn};
   position: absolute;
   width: 185px;
   height: 26px;

@@ -1,9 +1,7 @@
-import React from 'react';
 import styled from 'styled-components';
 import facebookIcon from '../../../assets/home/facebook.svg';
 import instagramIcon from '../../../assets/home/instagram.svg';
 import twitterIcon from '../../../assets/home/twitter.svg';
-import mouse from '../../../assets/common/mouse.svg';
 
 const SocialHome = () => {
   return (
@@ -34,7 +32,6 @@ const FacebookIcon = styled.div`
   background-image: url(${facebookIcon});
   width: 40px;
   height: 40px;
-  cursor: url(${mouse}), auto;
 `;
 
 const InstagramIcon = styled.div`
@@ -44,7 +41,6 @@ const InstagramIcon = styled.div`
   background-image: url(${instagramIcon});
   width: 40px;
   height: 40px;
-  cursor: url(${mouse}), auto;
 `;
 
 const TwitterIcon = styled.div`
@@ -54,7 +50,6 @@ const TwitterIcon = styled.div`
   background-image: url(${twitterIcon});
   width: 40px;
   height: 40px;
-  cursor: url(${mouse}), auto;
 `;
 
 export default SocialHome;

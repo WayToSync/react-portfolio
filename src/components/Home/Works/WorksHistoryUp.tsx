@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 import CategoryTitle from '../../Common/CategoryTitle';
 import historyIcon from '../../../assets/home/history.svg';

@@ -1,5 +1,5 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import { skillsApi } from '../features/skillData/skilApi';
+import { skillsApi } from '../features/skillData/skillApi';
 export const store = configureStore({
   reducer: {
     [skillsApi.reducerPath]: skillsApi.reducer,

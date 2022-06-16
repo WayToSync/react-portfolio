@@ -1,7 +1,5 @@
-import React from 'react';
 import styled from 'styled-components';
 import WorksHistoryBar from './WorksHistoryBar';
-import mouse from '../../../assets/common/mouse.svg';
 
 const WorksHistoryPersonalContent = () => {
   return (
@@ -68,7 +66,6 @@ const HistoryQualText = styled.div`
 `;
 
 const HistoryQualCircleWrapper = styled.a`
-  cursor: url(${mouse}), auto;
   position: absolute;
   width: 145px;
   height: 145px;

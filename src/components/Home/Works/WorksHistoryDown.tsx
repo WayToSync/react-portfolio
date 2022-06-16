@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 import CategoryTitle from '../../Common/CategoryTitle';
 import WorksHistoryPersonalContent from './WorksHistoryPersonalContent';

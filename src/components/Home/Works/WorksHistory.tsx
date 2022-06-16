@@ -1,4 +1,3 @@
-import React from 'react';
 import WorksHistoryUp from './WorksHistoryUp';
 import WorksHistoryDown from './WorksHistoryDown';
 

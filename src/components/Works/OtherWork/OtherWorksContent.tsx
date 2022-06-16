@@ -1,6 +1,4 @@
-import React from 'react';
 import styled from 'styled-components';
-import mouse from '../../../assets/common/mouse.svg';
 import worksOtherLeft from '../../../assets/works/work-other-left.png';
 import worksOtherRight from '../../../assets/works/work-other-right.png';
 import WorksCard from '../../Common/WorksCard';
@@ -34,7 +32,6 @@ const LeftCard = styled.div`
   height: 427px;
   left: 309px;
   top: 1469px;
-  cursor: url(${mouse}), auto;
 `;
 
 const RightCard = styled.div`
@@ -43,7 +40,6 @@ const RightCard = styled.div`
   height: 427px;
   left: 614px;
   top: 1469px;
-  cursor: url(${mouse}), auto;
 `;
 
 export default OtherWorksContent;

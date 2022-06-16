@@ -1,7 +1,5 @@
-import React from 'react';
 import styled from 'styled-components';
 import chevronTop from '../../assets/common/chevron-top.svg';
-import mouse from '../../assets/common/mouse.svg';
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -37,7 +35,7 @@ const ReturnTopButton = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: url(${mouse}), auto;
+  cursor: pointer;
 `;
 
 const ChevronTopIcon = styled.div`

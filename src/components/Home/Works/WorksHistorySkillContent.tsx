@@ -1,6 +1,5 @@
-import React from 'react';
 import styled from 'styled-components';
-import { useSkillsQuery } from '../../../features/skillData/skilApi';
+import { useSkillsQuery } from '../../../features/skillData/skillApi';
 
 const WorksHistorySkillContent = () => {
   const { data, error, isFetching, isSuccess } = useSkillsQuery();
@@ -15,7 +14,7 @@ const WorksHistorySkillContent = () => {
               <HistorySkillLine key={index}>
                 <HistorySkillName>{skill.name}</HistorySkillName>
                 <HistorySkillLevel>
-                  {skill.level.map((level, index) => (level ? <DarkCyanCircle key={index} /> : <SilverCircle key={index} />))}
+                  {skill.level.map(level => (level ? <DarkCyanCircle key={index} /> : <SilverCircle key={index} />))}
                 </HistorySkillLevel>
                 <HistorySkillContent>{skill.content}</HistorySkillContent>
               </HistorySkillLine>

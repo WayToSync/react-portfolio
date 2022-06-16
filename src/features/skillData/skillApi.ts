@@ -6,6 +6,8 @@ type skillsApiProps = {
   content: string;
 };
 
+//TODO: Add Documentation API
+
 export const skillsApi = createApi({
   reducerPath: 'skillsApi',
   baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:3006/' }),

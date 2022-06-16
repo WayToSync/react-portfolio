@@ -1,6 +1,6 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
-import theme from '../../styles/theme';
+import theme from '../../styles/defaultTheme';
 import GlobalStyles from '../../styles/globalStyle';
 import Footer from './Footer';
 

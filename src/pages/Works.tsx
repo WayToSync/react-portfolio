@@ -1,7 +1,6 @@
-import React from 'react';
 import HeaderWorks from '../components/Works/Header/HeaderWorks';
 import WorksContent from '../components/Works/Work/WorksContent';
-import OtherWorksContent from '../components/Works/OtherWork/OtherWorkContent';
+import OtherWorksContent from '../components/Works/OtherWork/OtherWorksContent';
 
 const Works = () => {
   return (

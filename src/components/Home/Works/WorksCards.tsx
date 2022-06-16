@@ -1,7 +1,5 @@
-import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import mouse from '../../../assets/common/mouse.svg';
 import worksLeft from '../../../assets/home/works-left.png';
 import worksMiddle from '../../../assets/home/works-middle.png';
 import worksRight from '../../../assets/home/works-right.png';
@@ -31,7 +29,6 @@ const WorksCards = () => {
 
 const NextLink = styled(Link)`
   text-decoration: none;
-  cursor: url(${mouse}), auto;
 `;
 
 const LeftCard = styled.div`

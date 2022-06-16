@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 import GeneralTitle from '../../Common/GeneralTitle';
 import CategoryTitle from '../../Common/CategoryTitle';
@@ -38,7 +37,7 @@ const ActivityHome = () => {
         <br />
         久しぶりに自転車に乗った
         <br />
-        Raspbery Pi でスマートホームハブを構築：Hass.io
+        Raspberry Pi でスマートホームハブを構築：Hass.io
         <br />
         新年のご挨拶 と 新天地
       </ActivityBlogContent>
