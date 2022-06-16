@@ -14,7 +14,13 @@ const WorksHistorySkillContent = () => {
               <HistorySkillLine key={index}>
                 <HistorySkillName>{skill.name}</HistorySkillName>
                 <HistorySkillLevel>
+<<<<<<< HEAD
                   {skill.level.map(level => (level ? <DarkCyanCircle key={index} /> : <SilverCircle key={index} />))}
+=======
+                  {skill.level.map((level, index) => (
+                    <SkillsCircle key={index} level={level} />
+                  ))}
+>>>>>>> cc431c8ef078a393bdfbb7a89ba050a3018177f0
                 </HistorySkillLevel>
                 <HistorySkillContent>{skill.content}</HistorySkillContent>
               </HistorySkillLine>
@@ -55,20 +61,12 @@ const HistorySkillLevel = styled.div`
   justify-content: space-between;
 `;
 
-const DarkCyanCircle = styled.div`
+const SkillsCircle = styled.div<{ level: string }>`
   width: 8px;
   height: 8px;
   margin-top: 10px;
   border-radius: 50%;
-  background-color: ${props => props.theme.colors.darkCyan};
-`;
-
-const SilverCircle = styled.div`
-  width: 8px;
-  height: 8px;
-  margin-top: 10px;
-  border-radius: 50%;
-  background-color: ${props => props.theme.colors.silver};
+  background-color: ${props => (props.level ? props.theme.colors.darkCyan : props.theme.colors.silver)};
 `;
 
 const HistorySkillContent = styled.div`
