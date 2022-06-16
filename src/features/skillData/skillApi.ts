@@ -1,12 +1,13 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
 type skillsApiProps = {
+  id: number;
   name: string;
   level: string[];
   content: string;
 };
 
-//TODO: Add Documentation API
+//TODO: Add Documentation API https://redux-toolkit.js.org/rtk-query/usage/code-generation
 
 export const skillsApi = createApi({
   reducerPath: 'skillsApi',
@@ -16,7 +17,7 @@ export const skillsApi = createApi({
       query: () => '/skills',
     }),
     skill: builder.query<skillsApiProps, string>({
-      query: name => `/skills/${name}`,
+      query: id => `/skills/${id}`,
     }),
   }),
 });
