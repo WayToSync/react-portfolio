@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import { useSkillsQuery } from '../../../features/skillData/skillApi';
+import { useGetSkillsQuery } from '../../../features/skillData/skillApi';
 
 const WorksHistorySkillContent = () => {
-  const { data, error, isFetching, isSuccess } = useSkillsQuery();
+  const { data, error, isFetching, isSuccess } = useGetSkillsQuery();
   return (
     <HistorySkillWrapper>
       {isFetching && <h2>...isFetching</h2>}
